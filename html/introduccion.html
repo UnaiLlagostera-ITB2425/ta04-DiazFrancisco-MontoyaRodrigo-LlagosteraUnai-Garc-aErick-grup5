@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Portafolio Personal "Nombre"</title>
     <meta charset="UTF-8">
@@ -7,49 +8,111 @@
     <meta http-equiv="Lenguaje" content="es">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descripción" content="Esta web és un currículum personal con datos sensibles">
-    <meta name="keywords" content="programador, webdesigner, sysadmin, informatico, empleado">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="keywords" content="programador, webdesigner, sysadmin, informatico, empleado, trabajador, MDS">
+    <link rel="stylesheet" href="../css/introduccion.css">
 </head>
+
+
 <body>
     <header>
         <div id="NavBar"></div>
-            <div id="Logo">
-                <img src="../images/logo1.png" alt="">
+        <div id="Logo">
+            <img src="https://via.placeholder.com/150x50/0000FF/808080?text=Logo" alt="Logo">
+        </div>
+        <div id="NavBarTitle">
+            <h1>Xavier Sanchéz</h1>
+        </div>
+        <div id="List">
+            <nav>
+                <ul>
+                    <li><a href="./introduccion.html">Introducción</a></li>
+                    <li><a href="./proyecto1.html">Proyecto1</a></li>
+                    <li><a href="./proyecto2.html">Proyecto2</a></li>
+                    <li><a href="./repositorio.html">Repositorio</a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div id="Main">
+        <div class="content-block">
+            <div class="text">
+                <h1>Who am I?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae voluptatum ullam neque minima
+                    molestiae, obcaecati maiores officia voluptates repellat nesciunt exercitationem quasi aliquam
+                    architecto? Quas, inventore. Debitis, nihil quae! Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Voluptate quam quisquam enim et officia? Consequatur molestias, eos natus unde
+                    laudantium, aperiam sapiente exercitationem nesciunt qui non officia sed accusamus ut? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Repellendus laborum, minus cupiditate amet, enim sit
+                    velit illum at quisquam molestiae eveniet ea eum quasi, blanditiis sapiente. Voluptas quis minus
+                    omnis!</p>
             </div>
-            <div id="NavBarTitle">
-                <h1>Portafolio Personal "Xporno"</h1>
+            <div>
+                <div class="image">
+                    <img src="https://via.placeholder.com/250x200/FF5733/FFFFFF?text=Imagen+1" alt="Imagen 1">
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/your_instagram_username" target="_blank">
+                        <img src="../images/logoinsta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/your_linkedin_username" target="_blank">
+                        <img src="../images/logolink.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/your_github_username" target="_blank">
+                        <img src="../images/logogit.png" alt="GitHub">
+                    </a>
+                </div>
             </div>
-            <div id="List">
+        </div>
+
+
+        <div>
+
+            <div class="sections">
+                <h2 class="section-title">Formación</h2>
+
+                <div class="list-card">
+                    <li>Formación Académica</li>
+                    <li>Formación Complementaria</li>
+                    <li>Experiencia Laboral</li>
+                </div>
+
+                </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div>
+            <div class="text">
+                <h2>Idiomas</h2>
                 <nav>
                     <ul>
-                        <li><a href="./introduccion.html">Introducción</a></li>
-                        <li><a href="./proyecto1.html">Proyecto1</a></li>
-                        <li><a href="./proyecto2.html">Proyecto2</a></li>
-                        <li><a href="./repositorio.html">Repositorio</a></li>
+                        <li>Español</li>
+                        <li>Inglés</li>
+                        <li>Francés</li>
                     </ul>
                 </nav>
             </div>
-        </div>        
-    </header>
-    <div id="Main">
-        <div id="MainTitle1">
-            <h1>Introducción</h1>
-        </div>
-        <div id="MainContent1">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ullam, fuga vero facilis sunt et illo corrupti velit asperiores voluptate obcaecati reiciendis totam quasi soluta suscipit, culpa corporis, tenetur doloremque?</p>
-        </div>
-        <div id="MainImage1">
-
-        </div>
-        <div id="MainTitle2">
-            <h1>Introducción</h1>
-        </div>
-        <div id="MainContent2">
-            <p>¡Hola mundo!</p>
-        </div>
-        <div id="MainImage2">
-
         </div>
     </div>
+
+    <div id="ContactForm">
+        <h2>Contacto</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </div>
 </body>
+
 </html>

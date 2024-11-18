@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <title>Portafolio Personal "Nombre"</title>
@@ -28,7 +28,6 @@
                     <li><a href="./proyecto1.html">Proyecto1</a></li>
                     <li><a href="./proyecto2.html">Proyecto2</a></li>
                     <li><a href="./repositorio.html">Repositorio</a></li>
-                    <li><a href="./prueba graciosa.html">xd</a></li>               
                 </ul>
             </nav>
         </div>
@@ -48,8 +47,8 @@
                     omnis!</p>
             </div>
             <div>
-                <div id="pomniImagen">
-                    <img src="../images/image.png" alt="Imagen 1">
+                <div class="image">
+                    <img src="https://via.placeholder.com/250x200/FF5733/FFFFFF?text=Imagen+1" alt="Imagen 1">
                 </div>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/your_instagram_username" target="_blank">
@@ -80,26 +79,24 @@
             </div>
         </div>
 
-        <div>
-            <div class="sections">
-                <div>
-                    <h2 class="section-title">Idiomas</h2>
-                </div>
-                <div>
-                    <nav class="list-card">
-                        <div>
-                        <ul>
-                            <div style="display: flex;">
-                                    <li>Español</li>
-                                    <li>Inglés</li>
-                                    <li>Francés</li>
-                                    <li>Alemán</li>
-                            </div>
-                        </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+        <div class="sections">
+            <h2 class="section-title">Idiomas</h2>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                    <li><a href="#" onclick="changeLanguage('en')">Inglés</a></li>
+                    <li><a href="#" onclick="changeLanguage('fr')">Francés</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="../js/scriptsIntro.js"></script>
+
+            <div id="content">
+                <h1 id="title">Bienvenido a mi portafolio</h1>
+                 <p id="description">Soy un desarrollador web con experiencia en proyectos de diversas tecnologías.</p>
+             </div>
         </div>
 
     <div id="ContactForm">
@@ -119,6 +116,7 @@
             <input type="reset" value="Borrar">
         </form>
     </div>
+
 </body>
 
 </html>

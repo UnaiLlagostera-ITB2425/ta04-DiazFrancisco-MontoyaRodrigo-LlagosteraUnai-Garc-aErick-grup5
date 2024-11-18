@@ -54,7 +54,66 @@ header {
     text-decoration: underline;
 }
 
-/* Estilos para la sección principal */
+/* Carrete de imagenes */
+
+#CarouselContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#Carousel {
+    display: flex;
+    animation: slideAnimation 10s linear reverse;
+    transition: transform 0.5s ease;
+}
+
+#Carousel .Slide {
+    flex: 0 0 100%;
+}
+
+#Carousel .Slide img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#CarouselCOntainer:hover #Carousel {
+    animation-play-state: paused;
+}
+
+/* Botones */
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 16px;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* Estilos de la pantalla */
 #Main {
     padding: 20px;
 }
@@ -73,6 +132,7 @@ header {
 }
 
 /* Estilos para las imágenes */
+
 #MainImage1, #MainImage2 {
     margin-bottom: 20px;
     height: 300px;
@@ -84,4 +144,6 @@ header {
 #MainTitle2, #MainContent2, #MainImage2 {
     margin-bottom: 20px;
 }
+
+
 

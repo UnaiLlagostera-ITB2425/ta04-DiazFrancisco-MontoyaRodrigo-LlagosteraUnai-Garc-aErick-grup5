@@ -1,3 +1,4 @@
+/* Estilos generales para el sitio */
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +34,12 @@ header {
 /* Estilos para la imagen en el bloque de contenido */
 .content-block .image img {
     width: 250px; 
+    height: auto;
+    border-radius: 5px;
+}
+
+#idiomas {
+    width: 15px;
     height: auto;
     border-radius: 5px;
 }
@@ -74,7 +81,6 @@ header {
 }
 
 /* Estilos para la sección principal */
-
 #freelancerText {
     font-size: 30px;
     font-weight: bold;
@@ -112,11 +118,6 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-.list-card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
 #Main {
     padding: 20px;
@@ -148,3 +149,75 @@ button {
     margin-bottom: 20px;
 }
 
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.sections {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}

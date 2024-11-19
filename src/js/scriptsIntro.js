@@ -22,3 +22,4 @@ function changeLanguage(language) {
     // Cambiar el atributo lang en el HTML (opcional, para accesibilidad y SEO)
     document.documentElement.lang = language;
 }
+

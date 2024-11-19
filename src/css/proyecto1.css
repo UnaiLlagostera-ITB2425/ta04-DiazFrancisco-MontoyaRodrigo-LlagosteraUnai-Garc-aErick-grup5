@@ -131,3 +131,22 @@ button {
     margin-bottom: 20px;
 }
 
+#imatge1 {
+    width: 100%;       /* La imagen ocupará el 30% del ancho del contenedor */
+    height: auto;    /* La altura de la imagen será de 100px */
+    object-fit: right; /* Asegura que la imagen mantenga la proporción sin distorsionarse y se alinee a la derecha */
+    border-radius: 5px; /* Si deseas bordes redondeados */
+    float: right;
+}
+
+#imatge2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+#case1 {
+    padding: 20px;
+}

@@ -1,21 +1,58 @@
+/* -- ESTILO BASE --*/
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: Helvetica;
+    margin: 0;
+    display: flex;
 }
 
-/* Estilos para el encabezado */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+.container {
+    width: 100%;
+    margin-left: 200px;
+    padding-left: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+/* ENCABEZADO */
+header {
+    background-color: #0b4246;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-self: space-between;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    top: 0;
+}
+
+#Logo img{
+    height: 50px;
+}
+
+#navbartitle h1{
+    font-size: 35px;
+    margin: 20px 5;
+}
+
+.sidebarlist a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebarlist a:hover {
+color: #ff9800;
+}
+
 
 /* Estilos para los bloques de contenido */
 .content-block {

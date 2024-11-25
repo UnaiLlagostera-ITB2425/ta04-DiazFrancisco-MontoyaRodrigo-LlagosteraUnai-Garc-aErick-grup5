@@ -128,6 +128,7 @@ header {
 .content-block {
     display: flex;
     width: 100%;
+    margin-bottom: 40px; /* Add margin-bottom to create separation between content blocks */
 }
 
 .content-block img {
@@ -169,6 +170,7 @@ header {
     gap: 20px;
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 80px; /* Add margin-bottom to create separation between language section and adjacent blocks */
 }
 
 .language-item {
@@ -207,6 +209,7 @@ header {
 .language-bar .progress {
     animation: grow 1s ease-in-out;
 }
+}
 
 @keyframes grow {
     from {
@@ -222,6 +225,7 @@ header {
 #ContactForm {
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #ContactForm h2 {

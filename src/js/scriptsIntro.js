@@ -30,7 +30,7 @@ const translations = {
         description: "Je suis un développeur web avec de l'expérience dans des projets utilisant différentes technologies.",
         aboutTitle: "Qui suis-je?",
         aboutText: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae voluptatum ullam neque minima...",
-        contacte: "Contact",
+        contactTitle: "Contact", // Aquí se corrigió
         formName: "Nom:",
         formEmail: "Email:",
         formMessage: "Message:",
@@ -38,7 +38,7 @@ const translations = {
         formReset: "Réinitialiser",
         language: "Langue"
     }
-};Titl
+};
 
 function changeLanguage(language) {
     document.getElementById('title').textContent = translations[language].title;

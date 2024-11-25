@@ -11,32 +11,38 @@
     <link rel="stylesheet" href="../css/repositorio.css">
 </head>
 
-<header>
-    <div id="NavBar"></div>
-        <div id="Logo">
-            <img src="../images/logo1.png" alt="">
-        </div>
-        <div id="NavBarTitle">
-            <h1>Portafolio Personal</h1>
-        </div>
-        <div id="List">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Introducción</a></li>
-                    <li><a href="./proyecto1.html">Proyecto1</a></li>
-                    <li><a href="./proyecto2.html">Proyecto2</a></li>
-                    <li><a href="./repositorio.html">Repositorio</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>        
-</header>
+<body>
+    <header>
+        <div class="container">
+            
+            <div id="Logo">
+                <img src="images/image.png" alt="Logo">
+            </div>
 
-<div id="Main">
+        <div id="titulo">
+            <h1>Texto Editable</h1>
+        </div>
+
+            <div id="navbartitle">
+                <h1 id="animacion-texto"></h1>
+            </div>
+                
+            <div class="section-titulos">
+                <ul class="navbar">
+                    <li><a href="./introduccion.html">Introducción</a></li>
+                    <li><a href="./proyecto1.html">Proyecto 1</a></li>
+                    <li><a href="./proyecto2.html">Proyecto 2</a></li>
+                </ul> 
+            </div>
+        </div>
+    </header>
+
+
+<div id="main">
     <section id="MainTitle1">
             <h3><a href="./proyecto1.html">Proyecto 1</a></h3>
         <div id="MainContent1">
-            <p>Explicación</p>
+            <p>Explicación, detalle brevemente su proyecto...</p>
         </div>
         <div id="MainImage1">
             <img src="../images/yo.jpg" alt="">
@@ -46,54 +52,18 @@
     <section id="MainTitle2">
         <h3><a href="./proyecto2.html">Proyecto2</a></h3>
         <div id="MainContent2">
-            <p>Explicación</p>
+            <p>Explicación, detalle brevemente si proyecto...</p>
         </div>
         <div id="MainImage2">
             <img src="../images/yo.jpg" alt="">
         </div>
     </section>
-
-    <!--Carrete de imagenes-->
-        <section id="CarouselContainer">
-            <div id="Carousel">
-                <div class="Slide">
-                    <img src="pexels_photo-270557.jpeg"
-                    alt= "Image 1">                
-                <div class="Caption">
-                </div>
-            </div>
-            
-            <div class="Slide">
-                <img src="images/pexels-photo-574071.jpeg" 
-                alt="Image 2"
-                title="Proyecto Ejemplo"/>
-                <div class="Caption">
-                </div>
-            </div>
-
-            <div class="Slide">
-                <img src="images/pexels-photo-943101.jpeg"
-                alt="Image 3">
-                <div class="Caption">
-                </div>
-            </div>
-
-            <div class="Slide">
-                <img src="" alt="Image 4">
-                <div class="Caption">
-                </div>
-            </div>
-        </section>
-
-        <button id="prevBtn" class="nav-btn">Anterior</button>
-        <button id="nxtBtn" class="nav-btn">Siguiente</button>
-        
-    <div id="GitHub">
-        <h4><a href="https://github.com/UnaiLlagostera-ITB2425">GitHub</a></h4>
-    </div>
     
     <footer>
-        <div id="Footer">
+        <div class="Footer">
+            <div id="GitHub">
+                <h4><a href="https://github.com/UnaiLlagostera-ITB2425">GitHub</a></h4>
+            </div>
             <p>© 2024 - "Nombre" - Todos los derechos reservados</p>
         </div>
     </footer>

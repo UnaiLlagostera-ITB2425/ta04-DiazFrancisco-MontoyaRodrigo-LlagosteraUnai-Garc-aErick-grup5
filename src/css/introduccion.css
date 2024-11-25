@@ -224,6 +224,42 @@ header {
     }
 }
 
+/* Carrete de imagenes */
+
+#CarouselContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#Carousel {
+    display: flex;
+    animation: slideAnimation 10s linear reverse infinite;
+    transition: transform 0.8s ease;
+}
+
+#Carousel .Slide {
+    flex: 0 0 100%;
+}
+
+#Carousel .Slide img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#CarouselCOntainer:hover #Carousel {
+    animation-play-state: paused;
+}
+
 /* --- BLOQUE D CONTACTO --- */
 
 #ContactForm {
@@ -236,13 +272,6 @@ header {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 8px; 
-}
-
-#ContactForm form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
 }
 
 #ContactForm input,

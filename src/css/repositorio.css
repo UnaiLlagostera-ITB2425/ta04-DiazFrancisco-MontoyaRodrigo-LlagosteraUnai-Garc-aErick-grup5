@@ -64,8 +64,8 @@ header {
 
 #Carousel {
     display: flex;
-    animation: slideAnimation 10s linear reverse;
-    transition: transform 0.5s ease;
+    animation: slideAnimation 10s linear reverse infinite;
+    transition: transform 0.8s ease;
 }
 
 #Carousel .Slide {

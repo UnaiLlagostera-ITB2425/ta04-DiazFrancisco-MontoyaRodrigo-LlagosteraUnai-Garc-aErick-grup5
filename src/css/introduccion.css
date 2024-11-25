@@ -1,307 +1,276 @@
 /* Estilos generales para el sitio */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
 }
 
-/* Estilos para el encabezado */
+/* --- ENCABEZADO --- */
+
 header {
-    background-color: #333;
+    background-color: #0b4246;
     color: white;
-    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 10px;
 }
 
-/* Estilos para los bloques de contenido */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-items: flex-start;
+    width: 100%;
+}
+
+/* --- IMAGEN DE ENCABEZADO (OPCIONAL) --- */
+
+#Logo {
+    align-items: center;
+    gap: 15px;
+}
+
+#Logo img{
+    width: auto;
+    display: block;
+}
+ 
+ /* --- TITULOS EN ENCABEZADO --- */
+
+#titulo {
+    font-size: 30px;
+    font-weight: bold;
+    color: aquamarine;
+    text-align: center;
+}
+
+ .section-titulos {
+    margin-top: 80px;
+}
+
+ .navbar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: aquamarine;
+    transform: scale(1.2);
+}
+
+#navbartitle h1 {
+    font-size: 25px; /* Ajusta el tamaño de la animación */
+    color: white; /* Cambia el color según el diseño */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    overflow: visible;
+    opacity: 1;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase;
+}
+
+/* --- Animación de escritura, bajo el titulo --- */
+
+#animacion-texto {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    border-right: 3px solid #989797;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    animation: typing 3s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Animación del cursor parpadeante */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20ch; /* Asegúrate que este valor coincida con el máximo de caracteres de tus frases */
+    }
+}
+
+/* --- Estilos para los bloques de contenido en ventana --- */
+#main {
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .content-block {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
-/* Estilos para el texto en el bloque de contenido */
-.content-block .text {
-    flex: 1; 
-    padding-right: 20px; 
-}
-
-/* Estilos para la imagen en el bloque de contenido */
-.content-block .image img {
-    width: 250px; 
+.content-block img {
+    flex: 1;
+    max-width: 250px; /* --- Para cambiar de tamaño su imagen de perfil, modifique este parametro --8 */
+    margin-left: 40px; 
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
     height: auto;
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#NavBar {
+/* --- REDES SOCIALES ICONS --- */
+
+.social-icons {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-#Logo img {
-    height: 50px;
-}
-
-#NavBarTitle h1 {
-    font-size: 24px;
-    margin-left: 10px;
-}
-
-#List nav ul {
-    list-style-type: none;
-}
-
-#List nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-#List nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#List nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para la sección principal */
-#freelancerText {
-    font-size: 30px;
-    font-weight: bold;
-    color: #333;
-    border-right: 3px solid #333; /* Cursor tipo "text input" */
-    padding-right: 5px;
-    white-space: nowrap; /* Para evitar que el texto se parta */
-    overflow: hidden; /* Oculta lo que se escribe fuera del contenedor */
-}
-
-@keyframes blink {
-    0% { border-color: transparent; }
-    50% { border-color: #333; }
-    100% { border-color: transparent; }
-}
-
-#freelancerText.blinking {
-    animation: blink 0.7s step-end infinite;
+    gap: 2px;
+    justify-content: center;
+    margin-top: auto;
 }
 
 .social-icons a img {
-    width: 40px; /* Tamaño base del icono */
-    height: 40px; /* Tamaño base del icono */
-    transition: transform 0.3s ease; /* Transición suave */
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
 }
 
-.social-icons a:hover img {
-    transform: scale(1.2); /* Aumenta el tamaño al 120% */
+.social-icons a img:hover {
+    transform: scale(1.2);
 }
 
+/* --- SECCIÓN DE IDIOMAS --- */
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#Main {
-    padding: 20px;
-}
-
-#MainTitle1, #MainTitle2 {
-    margin-bottom: 10px;
-}
-
-#MainContent1, #MainContent2 {
-    margin-bottom: 20px;
-}
-
-#MainContent1 p, #MainContent2 p {
-    font-size: 18px;
-    color: #333;
-}
-
-/* Estilos para las imágenes */
-#MainImage1, #MainImage2 {
-    margin-bottom: 20px;
-    height: 300px;
-    background-color: #ccc;
-}
-
-/* Agregar espacio entre secciones */
-#freelancerText, #MainTitle1, #MainContent1, #MainImage1,
-#MainTitle2, #MainContent2, #MainImage2 #imagenPomni{
-    margin-bottom: 20px;
-}
-/* Estilos para la imagen Pomni */
-#pomniImagen img {
-    width: 30%;       /* La imagen ocupará el 30% del ancho del contenedor */
-    height: 100px;    /* La altura de la imagen será de 100px */
-    object-fit: cover; /* Asegura que la imagen mantenga la proporción sin distorsionarse */
-    border-radius: 5px; /* Si deseas bordes redondeados */
-}
-
-.list-card {
+.language-list {
     display: flex;
-    margin-bottom: 30px;
-    list-style-type: none; /* Remove the bullet points */
-    margin-right: 20px;
-    padding-left: 20px; /* Add padding to create space for the bullet points */
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.list-card li {
-    margin-right: 100%; /* Add margin between list items */
-}
-
-
-@keyframes myAnim {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(-250px);
-	}
-
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
-
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateY(-65px);
-	}
-
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateY(-28px);
-	}
-
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateY(-8px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
-}
-
-#NavBar {
+.language-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    gap: 25px;
 }
 
-#Logo img {
-    height: 50px;
+.language-list span {
+    font-weight: bold;
+    color: #333;
+    min-width: 80px;
 }
 
-#NavBarTitle h1 {
-    font-size: 24px;
-    margin-left: 10px;
+.language-bar {
+    width: 100%;
+    flex: 1;
+    height: 10px;
+    gap: 5px;
+    background-color: #6d6969;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    max-width: 250px; /* --- Para cambiar el ancho de las barras, modifique este parametro --- */
 }
 
-#List nav ul {
-    list-style-type: none;
+.language-bar .progress {
+    height: 100%;
+    background-color: #f69708; /* Color del nivel */
+    border-radius: 20px;
+    width: var(--progress-width);
+    animation: grow 1s ease-in-out forwards;
+    transition: width 0.3s ease; /* Animación para suavidad */
 }
 
-#List nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+.language-bar .progress {
+    animation: grow 1s ease-in-out;
 }
 
-#List nav ul li a {
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
+
+/* --- BLOQUE D CONTACTO --- */
+
+#ContactForm {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#ContactForm h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px; 
+}
+
+#ContactForm form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+#ContactForm input,
+#ContactForm textarea{
+    font-size: 14px;
+    border-radius: 5px;
+    width: 200px;
+    height: 24px;
+}
+
+#ContactForm input[type="submit"] {
+    background-color:#0b4246;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#List nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para la sección principal */
-#freelancerText {
-    font-size: 30px;
-    font-weight: bold;
-    color: #333;
-    border-right: 3px solid #333; /* Cursor tipo "text input" */
-    padding-right: 5px;
-    white-space: nowrap; /* Para evitar que el texto se parta */
-    overflow: hidden; /* Oculta lo que se escribe fuera del contenedor */
-}
-
-#freelancerText.blinking {
-    animation: blink 0.7s step-end infinite;
-}
-
-.social-icons a img {
-    width: 40px; /* Tamaño base del icono */
-    height: 40px; /* Tamaño base del icono */
-    transition: transform 0.3s ease; /* Transición suave */
-}
-
-.social-icons a:hover img {
-    transform: scale(1.2); /* Aumenta el tamaño al 120% */
-}
-
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-#Main {
-    padding: 20px;
-}
-
-#MainTitle1, #MainTitle2 {
-    margin-bottom: 10px;
-}
-
-#MainContent1, #MainContent2 {
-    margin-bottom: 20px;
-}
-
-#MainContent1 p, #MainContent2 p {
-    font-size: 18px;
-    color: #333;
+#ContactForm input[type="submit"]:hover {
+    background-color: #989797;
 }
 
 /* Estilos para las imágenes */
-#MainImage1, #MainImage2 {
-    margin-bottom: 20px;
-    height: 300px;
-    background-color: #ccc;
+img {
+    max-width: 100%; /* Nunca será más grande que su contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacios blancos alrededor de la imagen */
 }
 
-/* Agregar espacio entre secciones */
-#freelancerText, #MainTitle1, #MainContent1, #MainImage1,
-#MainTitle2, #MainContent2, #MainImage2 {
-    margin-bottom: 20px;
+#Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+    width: 100%;
 }

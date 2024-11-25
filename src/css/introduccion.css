@@ -55,6 +55,10 @@ header {
     margin-top: 80px;
 }
 
+.section-title {
+    margin-top: 50px;
+}
+
  .navbar {
     display: flex;
     flex-direction: row;
@@ -143,6 +147,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 /* --- REDES SOCIALES ICONS --- */
 
 .social-icons {
@@ -162,7 +167,6 @@ header {
     transform: scale(1.2);
 }
 
-/* --- SECCIÓN DE IDIOMAS --- */
 
 .language-list {
     display: flex;

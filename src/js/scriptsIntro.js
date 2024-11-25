@@ -23,3 +23,15 @@ function changeLanguage(language) {
     document.documentElement.lang = language;
 }
 
+// Obtener el idioma del navegador del usuario
+const userLanguage = navigator.language || navigator.userLanguage;
+
+// Verificar si el idioma del usuario está disponible en las traducciones
+if (translations.hasOwnProperty(userLanguage)) {
+    // Cambiar el idioma a través de la función changeLanguage
+    changeLanguage(userLanguage);
+} else {
+    // Si el idioma del usuario no está disponible, establecer un idioma predeterminado
+    const defaultLanguage = 'en';
+    changeLanguage(defaultLanguage);
+}

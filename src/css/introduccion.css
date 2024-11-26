@@ -38,7 +38,8 @@ header {
 }
 
 #Logo img{
-    width: 70px;
+    width: 90px;
+    background: transparent;
 }
  
  /* --- TITULOS EN ENCABEZADO --- */
@@ -50,15 +51,12 @@ header {
     text-align: center;
 }
 
- .section-titulos {
-    margin-top: 20px;
+.section-titulos {
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
-.section-title {
-    margin-top: 20px;
-}
-
- .navbar {
+.navbar {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -74,12 +72,12 @@ header {
 
 .navbar a:hover {
     color: aquamarine;
-    transform: scale(1.2);
+    font-weight: bold;
 }
 
 #navbartitle h1 {
-    font-size: 25px; /* Ajusta el tamaño de la animación */
-    color: white; /* Cambia el color según el diseño */
+    font-size: 25px;
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     overflow: visible;
@@ -88,38 +86,7 @@ header {
     text-transform: uppercase;
 }
 
-/* --- Animación de escritura, bajo el titulo --- */
 
-#animacion-texto {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000000;
-    border-right: 3px solid #989797;
-    padding-right: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-align: center;
-    animation: typing 3s steps(20, end), blink-caret 0.5s step-end infinite;
-}
-
-/* Animación del cursor parpadeante */
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: white;
-    }
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 20ch; /* Asegúrate que este valor coincida con el máximo de caracteres de tus frases */
-    }
-}
 
 /* --- Estilos para los bloques de contenido en ventana --- */
 #main {

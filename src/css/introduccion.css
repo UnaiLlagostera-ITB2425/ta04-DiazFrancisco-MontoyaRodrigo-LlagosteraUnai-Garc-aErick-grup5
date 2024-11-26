@@ -211,7 +211,6 @@ header {
 .language-bar .progress {
     animation: grow 1s ease-in-out;
 }
-}
 
 @keyframes grow {
     from {

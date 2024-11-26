@@ -38,6 +38,7 @@ header {
 
 #Logo img{
     width: 70px;
+    background: transparent;
 }
  
  /* --- TITULOS EN ENCABEZADO --- */

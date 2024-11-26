@@ -34,12 +34,11 @@ header {
 
 #Logo {
     align-items: center;
-    gap: 15px;
+    background: transparent;
 }
 
 #Logo img{
-    width: auto;
-    display: block;
+    width: 70px;
 }
  
  /* --- TITULOS EN ENCABEZADO --- */
@@ -52,11 +51,11 @@ header {
 }
 
  .section-titulos {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .section-title {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
  .navbar {
@@ -213,7 +212,6 @@ header {
 
 .language-bar .progress {
     animation: grow 1s ease-in-out;
-}
 }
 
 @keyframes grow {

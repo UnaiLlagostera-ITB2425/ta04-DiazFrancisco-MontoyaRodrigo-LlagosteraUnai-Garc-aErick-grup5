@@ -34,11 +34,11 @@ header {
 
 #Logo {
     align-items: center;
+    background: transparent;
 }
 
 #Logo img{
     width: 70px;
-    background: transparent;
 }
  
  /* --- TITULOS EN ENCABEZADO --- */

@@ -1,5 +1,4 @@
 /* Estilos generales para el sitio  violeta pastel (#C5ADC5), azul acero claro (#B2B5E0)*/
-azul oscuro clásico (#0A1828), turquesa (#178582), dorado (#BFA181)
 * {
     box-sizing: border-box;
 }
@@ -7,7 +6,7 @@ azul oscuro clásico (#0A1828), turquesa (#178582), dorado (#BFA181)
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    background-color: #2a9490;
+    background-color: #023852;
     color: #BFA181
 }
 
@@ -259,7 +258,7 @@ h1, h2, h3 {
 }
 
 #ContactForm input[type="submit"] {
-    background-color:#0b4246;
+    background-color:#17283b; 
     color: #BFA181;
     border: none;
     cursor: pointer;
@@ -270,7 +269,7 @@ h1, h2, h3 {
 }
 
 #ContactForm input[type="submit"]:hover {
-    background-color: #BFA181;
+    background-color: #0b4246;
 }
 
 /* Estilos para las imágenes */

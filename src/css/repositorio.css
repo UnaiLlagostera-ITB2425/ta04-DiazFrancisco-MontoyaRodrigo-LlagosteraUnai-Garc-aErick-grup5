@@ -1,4 +1,4 @@
-/* Estilos generales para el sitio */
+.navbar
 * {
     box-sizing: border-box;
 }
@@ -6,13 +6,15 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    color: #BFA181;
+    background-color: #023852;
 }
 
 /* --- ENCABEZADO --- */
 
 header {
-    background-color: #0b4246;
-    color: white;
+    background-color: #17283b;
+    color: #BFA181;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +22,7 @@ header {
     width: 100%;
     height: auto;
     padding: 10px;
+    font-weight: bold;
 }
 
 .container {
@@ -40,6 +43,8 @@ header {
 #Logo img{
     width: auto;
     display: block;
+    width: 60px;
+    background: transparent;
 }
  
  /* --- TITULOS EN ENCABEZADO --- */
@@ -47,8 +52,9 @@ header {
 #titulo {
     font-size: 30px;
     font-weight: bold;
-    color: aquamarine;
+    color: #BFA181;
     text-align: center;
+    font-family: 'Rimons', sans-serif;
 }
 
 .section-titulos {
@@ -63,7 +69,7 @@ header {
 
 .navbar a {
     font-size: 25px;
-    color: white;
+    color: #BFA181;
     padding: 10px 25px;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -76,7 +82,7 @@ header {
 
 #navbartitle h1 {
     font-size: 25px; /* Ajusta el tamaño de la animación */
-    color: white; /* Cambia el color según el diseño */
+    color: #BFA181; /* Cambia el color según el diseño */
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     overflow: visible;
@@ -133,4 +139,11 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10 px 0;
+}
+
+@font-face {
+    font-family: 'Rimons';
+    src: url('../fuentes/RIMONS.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;   
 }

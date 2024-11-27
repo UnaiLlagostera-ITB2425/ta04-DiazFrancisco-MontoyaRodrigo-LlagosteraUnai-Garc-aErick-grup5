@@ -8,10 +8,10 @@ function startPulsing(icon) {
 
     function pulse() {
         if (growing) {
-            scale += 0.02; // Incrementar el tamaño
+            scale += 0.005; // Incrementar el tamaño más lentamente
             if (scale >= 1.4) growing = false; // Cambiar a reducción si llega al límite superior
         } else {
-            scale -= 0.02; // Reducir el tamaño
+            scale -= 0.005; // Reducir el tamaño más lentamente
             if (scale <= 1) growing = true; // Cambiar a crecimiento si llega al límite inferior
         }
 

@@ -22,14 +22,28 @@ header {
     width: 100%;
     height: auto;
     padding: 10px;
-    font:'Rimons';
+    font-family: 'Rimons', sans-serif; /* Apply the custom font */
 }
-@font-headers {
-    font-family:'Rimons';
-    src: url('') format('truetype');
+
+@font-face {
+    font-family: 'Rimons';
+    src: url('../fuentes/RIMONS.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Melodia';
+    src: url('../fuentes/Melodia.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Baristo';
+    src: url('../fuentes/Baristo.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 
 h1, h2, h3 {
     font-weight: bold;

@@ -8,6 +8,7 @@ body {
     margin: 0;
     color: #BFA181;
     background-color: #023852;
+    margin: 2%;
 }
 
 /* --- ENCABEZADO --- */
@@ -23,7 +24,7 @@ header {
     height: auto;
     padding: 10px;
     font-weight: bold;
-    font-family: 'Rimons', sans-serif;
+    font-family: 'Rimons', sans-serif; /* Apply the custom font */
 }
 
 .container {
@@ -54,14 +55,15 @@ header {
     font-size: 30px;
     font-weight: bold;
     color: #BFA181;
-    text-align: center;
+    text-align: center;;
 }
 
- .section-titulos {
-    margin-top: 80px;
+.section-titulos {
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
- .navbar {
+.navbar {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -77,12 +79,12 @@ header {
 
 .navbar a:hover {
     color: aquamarine;
-    transform: scale(1.2);
+    font-weight: bold;
 }
 
 #navbartitle h1 {
-    font-size: 25px; /* Ajusta el tamaño de la animación */
-    color: white; /* Cambia el color según el diseño */
+    font-size: 25px;
+    color: #BFA181;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     overflow: visible;
@@ -91,8 +93,9 @@ header {
     text-transform: uppercase;
 }
 
-
-
+.section-title {
+    margin-top: 80px;
+}
 
 .social-icons a img {
     width: 40px; /* Tamaño base del icono */
@@ -103,7 +106,6 @@ header {
 .social-icons a:hover img {
     transform: scale(1.2); /* Aumenta el tamaño al 120% */
 }
-
 
 button {
     margin-top: 20px;
@@ -161,3 +163,16 @@ img {
     font-style: normal;
     font-weight: normal;   
 }
+
+#imatge2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Rimons';
+    src: url('../fuentes/RIMONS.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;}

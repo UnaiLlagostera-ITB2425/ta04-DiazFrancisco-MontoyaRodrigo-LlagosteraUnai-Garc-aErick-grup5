@@ -8,10 +8,10 @@ body {
     margin: 0;
     color: #BFA181;
     background-color: #023852;
+    margin: 2%;
 }
 
 /* --- ENCABEZADO --- */
-
 
 header {
     background-color: #17283b;
@@ -23,7 +23,7 @@ header {
     height: auto;
     padding: 10px;
     font-weight: bold;
-    font-family: 'Rimons', sans-serif;
+    font-family: 'Rimons', sans-serif; /* Apply the custom font */
 }
 
 .container {
@@ -47,21 +47,22 @@ header {
     width: 60px;
     background: transparent;
 }
- 
+
  /* --- TITULOS EN ENCABEZADO --- */
 
-#titulo {
+ #titulo {
     font-size: 30px;
     font-weight: bold;
     color: #BFA181;
     text-align: center;
 }
 
- .section-titulos {
-    margin-top: 80px;
+.section-titulos {
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
- .navbar {
+.navbar {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -77,18 +78,22 @@ header {
 
 .navbar a:hover {
     color: aquamarine;
-    transform: scale(1.2);
+    font-weight: bold;
 }
 
 #navbartitle h1 {
-    font-size: 25px; /* Ajusta el tamaño de la animación */
-    color: #BFA181; /* Cambia el color según el diseño */
+    font-size: 25px;
+    color: #BFA181;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     overflow: visible;
     opacity: 1;
     letter-spacing: 2px; /* Espaciado entre letras */
     text-transform: uppercase;
+}
+
+.section-title {
+    margin-top: 80px;
 }
 
 /* Botones */
@@ -112,6 +117,12 @@ header {
     display: flex;
     width: 100%;
 }
+
+@font-face {
+    font-family: 'Rimons';
+    src: url('../fuentes/RIMONS.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 
 .content-block img {
     flex: 1;
@@ -145,3 +156,9 @@ img {
     font-style: normal;
     font-weight: normal;   
 }
+
+#imatge1, #imatge2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;}}

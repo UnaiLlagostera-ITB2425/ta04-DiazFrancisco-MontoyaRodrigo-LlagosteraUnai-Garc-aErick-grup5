@@ -20,7 +20,7 @@
             </div>
 
         <div id="titulo">
-            <h1>Texto Editable</h1>
+            <h1>Validación de Edad</h1>
         </div>
 
             <div id="navbartitle">
@@ -43,7 +43,7 @@
                 <h2 id="ObjTitle">Objetivo</h2>
             </div>
             <div id="text1">
-                <p>TextoTextoTexto</p>
+                <p>El objetivo de este proyecto fue desarrollar un sistema en Python capaz de validar la edad de una persona a partir de su fecha de nacimiento, para determinar si puede o no acceder al mundo laboral. El sistema debía calcular la edad de la persona en días y, basándose en ese dato, determinar si tiene al menos 16 años y menos de 65 años, para poder trabajar.</p>
             </div>
             <div id="imatge1">
             <img src="../images/logo1.png" alt="">
@@ -55,16 +55,13 @@
                 <h2>Resolución</h2>
             </div>
             <div id="text1">
-                <p>TextoTextoTexto</p>
+                <p>El objetivo de este proyecto fue desarrollar un sistema en Python capaz de validar la edad de una persona a partir de su fecha de nacimiento, para determinar si puede o no acceder al mundo laboral. El sistema debía calcular la edad de la persona en días y, basándose en ese dato, determinar si tiene al menos 16 años y menos de 65 años, para poder trabajar.</p>
+                <p>Cálculo de la Edad en Días: Para calcular los días vividos por la persona, utilicé la librería datetime de Python, la cual permite obtener la fecha actual con datetime.now(). Luego, resté el año de nacimiento al año actual para obtener una estimación aproximada de los días vividos. A partir de ahí, calculé el número exacto de días, teniendo en cuenta el día y mes de nacimiento.</p>
+                <p>Verificación de la Edad para Trabajar: Usando la edad calculada en días, establecí que: Si la persona tenía entre 16 y 65 años, mostraba el mensaje "Pots treballar". Si la persona tenía menos de 16 años o más de 65, mostraba el mensaje "No pots treballar".</p>
+                <p>Validación de la Fecha de Nacimiento: Implementé un bucle while que continuaba solicitando la fecha de nacimiento hasta que el usuario introdujera una fecha válida. Además, utilicé un bloque try-except para manejar errores de formato o datos incorrectos. Si la fecha introducida no cumplía con los requisitos (como un mes mayor a 12 o un día mayor a 31), el sistema mostraba un mensaje de error y pedía nuevamente la fecha.</p>
             </div>
             <div id="imatge2">
-                <img src="../images/logo1.png" alt="">
-            </div>
-            <div id="text2">
-                <p>TextoTextoTexto</p>
-            </div>
-            <div id="imatge2">
-                <img src="../images/logo2.png" alt="">
+                <img src="../images/edad.png" alt="">
             </div>
         </section>
         
@@ -73,7 +70,8 @@
                 <h2>Conclusión</h2>
             </div>
             <div id="text3">
-                <p>TextoTextoTexto</p>
+                <p>Este proyecto fue una excelente oportunidad para poner en práctica el manejo de fechas en Python y para aplicar validaciones de entradas de usuario de manera eficiente. Además, aprendí la importancia de validar correctamente los datos antes de realizar cálculos importantes, ya que un error en la entrada podría generar resultados incorrectos.</p>
+                <p>Al finalizar, pude comprobar que el sistema era funcional y permitía determinar si una persona podía trabajar o no según su edad. La validación de datos fue crucial para asegurar que el sistema no se rompiera ante entradas incorrectas. En resumen, este ejercicio me permitió mejorar mis habilidades en programación y en la implementación de sistemas interactivos con validación de datos en Python.</p>
             </div>
             <div id="imatge3">
                 <img src="../images/logo3.png" alt="">

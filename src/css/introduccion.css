@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Merry', sans-serif;
     background-color: #023852;
     color: #BFA181;
     margin: 2%;
@@ -39,15 +39,10 @@ header {
     font-style: normal;
     font-weight: normal;
 }
+
 @font-face {
-    font-family: 'Melodia';
-    src: url('../fuentes/Melodia.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'Baristo';
-    src: url('../fuentes/Baristo.ttf') format('truetype');
+    font-family: 'Merry';
+    src: url('../fuentes/Merriweather-Italic.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }

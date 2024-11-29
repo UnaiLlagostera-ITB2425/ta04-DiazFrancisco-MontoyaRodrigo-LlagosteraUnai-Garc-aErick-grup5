@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Merry', sans-serif;
     color: #BFA181;
     display: flex;
     flex-direction: column;
@@ -161,9 +161,9 @@ img {
     align-items: center;
     margin: 0 auto;}
 
-@font-face {
-        font-family: 'Rimons';
-        src: url('../fuentes/RIMONS.ttf') format('truetype');
+    @font-face {
+        font-family: 'Merry';
+        src: url('../fuentes/Merriweather-Italic.ttf') format('truetype');
         font-style: normal;
         font-weight: normal;
-    }    
+    }

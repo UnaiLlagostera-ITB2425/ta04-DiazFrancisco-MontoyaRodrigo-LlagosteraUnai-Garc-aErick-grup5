@@ -119,11 +119,6 @@ header {
     width: 100%;
 }
 
-@font-face {
-    font-family: 'Rimons';
-    src: url('../fuentes/RIMONS.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
 
 .content-block img {
     flex: 1;
@@ -164,4 +159,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;}}
+    margin: 0 auto;}
+
+@font-face {
+        font-family: 'Rimons';
+        src: url('../fuentes/RIMONS.ttf') format('truetype');
+        font-style: normal;
+        font-weight: normal;
+    }    

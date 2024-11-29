@@ -8,7 +8,7 @@ body {
     background-color: #023852;
     color: #BFA181;
     margin: 2%;
-}
+    }
 
 #pres {
     font-size: 16px;
@@ -76,7 +76,7 @@ h1, h2, h3 {
     font-size: 30px;
     font-weight: bold;
     color: #BFA181;
-    text-align: center;;
+    text-align: center;
 }
 
 .section-titulos {
@@ -88,23 +88,24 @@ h1, h2, h3 {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    font-size: 20px;
 }
 
 .navbar a {
+    font-family: 'Rimons', sans-serif; /* Asegúrate de usar el nombre exacto */
     font-size: 25px;
     color: #BFA181;
     padding: 10px 25px;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-
 .navbar a:hover {
     color: aquamarine;
     font-weight: bold;
 }
 
 #navbartitle h1 {
-    font-size: 25px;
+    font-size: 45px;
     color: #BFA181;
     font-family: 'Rimons', sans-serif;
     text-align: center;
@@ -126,32 +127,35 @@ h1, h2, h3 {
 }
 
 .content-block {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    width: 100%;
-    margin-bottom: 40px; /* Add margin-bottom to create separation between content blocks */
+    display: flex; /* Habilita Flexbox para alineación */
+    align-items: center; /* Centrado vertical */
+    gap: 20px; /* Espaciado entre imagen y texto */
+    padding: 0px; /* Espaciado interno */
 }
 
 .content-block img {
-    flex: 1;
-    max-width: 250px; /* --- Para cambiar de tamaño su imagen de perfil, modifique este parametro --8 */
-    margin-left: 40px; 
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: auto;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0; /* Evita reducción de la imagen */
+    max-width: 200px; /* Tamaño máximo ajustado */
+    height: auto; /* Mantiene proporción */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra decorativa */
+}
+
+.content-block .text {
+    flex: 1; /* Permite que el texto se ajuste al espacio restante */
+    text-align: left; /* Alineación interna del texto */
+    font-size: 15px; /* Ajusta tamaño de fuente */
+    line-height: 1.3; /* Espaciado entre líneas para mejor legibilidad */
+    padding-left: 50px;
 }
 
 /* --- REDES SOCIALES ICONS --- */
 
 .social-icons {
     display: flex;
-    gap: 2px;
+    gap: 15px;
     justify-content: center;
-    margin-top: auto;
+    margin-top: 10px;
 }
 
 .social-icons a img {
@@ -352,7 +356,7 @@ img {
 
     .content-block {
         flex-direction: column;
-        align-items: center;
+        align-items: center;;
     }
 
     .content-block img {

@@ -14,12 +14,12 @@ body {
 
 header {
     background-color: #17283b;
-    color: #BFA181;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    height: auto;
     padding: 10px;
     font-weight: bold;
     font-family: 'Rimons', sans-serif; /* Apply the custom font */
@@ -110,7 +110,7 @@ header {
 #navbartitle h1 {
     font-size: 1.5em;
     color: #BFA181;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Rimons', sans-serif;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
